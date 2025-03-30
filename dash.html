@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Sidebar</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <ul class="menu">
+            <li><a href="dash.html">🏠 Dashboard</a></li>
+            <li><a href="invetory.html">🚑  Inventory</a></li>
+            <li><a href="cat.html">≣ Medicine Category</a></li>
+            <li><a href="med.html">📄 Medicne types</a></li>
+            <li><a href="profile.html">👤 Profile</a></li>
+            <li><a href="login.html">🚪 Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <button id="menu-btn">☰</button>
+    </div>
+
+</body>
+
+     <!-- Main Content -->
+     <div class="content">
+        <h2>Dashboard</h2>
+        <div class="card-container">
+            <div class="card orange">
+                <i class="fas fa-users"></i>
+                <p>Visitors</p>
+                <h3>1,294</h3>
+            </div>
+            <div class="card green">
+                <i class="fas fa-chart-bar"></i>
+                <p>Sales</p>
+                <h3>$1,345</h3>
+            </div>
+            <div class="card red">
+                <i class="fas fa-newspaper"></i>
+                <p>Subscribers</p>
+                <h3>1303</h3>
+            </div>
+            <div class="card blue">
+                <i class="fas fa-check-circle"></i>
+                <p>Order</p>
+                <h3>576</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="dash.js"></script>
+</body>
+</html>

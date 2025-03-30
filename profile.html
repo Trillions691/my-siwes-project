@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Update</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+     <!-- Sidebar -->
+     <div id="sidebar" class="sidebar">
+        <ul class="menu">
+            <li><a href="dash.html">🏠 Dashboard</a></li>
+            <li><a href="invetory.html">🚑  Inventory</a></li>
+            <li><a href="cat.html">≣ Medicine Category</a></li>
+            <li><a href="med.html">📄 Medicne types</a></li>
+            <li><a href="profile.html">👤 Profile</a></li>
+            <li><a href="login.html">🚪 Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <button id="menu-btn">☰</button>
+    </div>
+
+
+    <div class="profile-container">
+        <h2>Update Profile</h2>
+        <form id="profileForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="old-password">Old Password:</label>
+            <input type="password" id="old-password" name="old-password" required>
+
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" name="new-password" required>
+
+            <button type="submit">Update Profile</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script src="profile.js"></script>
+
+</body>
+</html>

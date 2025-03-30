@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Inventory - MediCare</title>
+    <link rel="stylesheet" href="cat.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <ul class="menu">
+            <li><a href="dash.html">🏠 Dashboard</a></li>
+            <li><a href="invetory.html">🚑  Inventory</a></li>
+            <li><a href="cat.html">≣ Medicine Category</a></li>
+            <li><a href="med.html">📄 Medicne types</a></li>
+            <li><a href="profile.html">👤 Profile</a></li>
+            <li><a href="login.html">🚪 Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <button id="menu-btn">☰</button>
+    </div>
+
+</body>
+    <div class="container">
+        <header>
+            <h1>MediCare</h1>
+            <button class="menu-btn">☰</button>
+        </header>
+
+        <h2>Medicine Inventory</h2>
+
+        <div class="inventory-list">
+            <button class="btn btn-primary" onclick="showForm()">Add new category</button>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Category Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="medicineTable">
+                    <tr>
+                        <td>1</td>
+                        <td>syrup</td>
+                        <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Vitamin</td>
+                        <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Vitamin</td>
+                        <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Capsule</td>
+                        <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Vitamin</td>
+                        <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                        <tr>
+                            <td>6</td>
+                            <td>Cream</td>
+                            <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="form-container" id="medicineForm">
+        <button class="btn btn-danger" onclick="hideForm()">Go Back</button>
+        <h3>Category name</h3>
+        <input type="text" id="name" placeholder="Enter Category Name">
+        <button class="btn btn-primary" onclick="addMedicine()">Add medicine</button>
+    </div>
+
+    <script src="cat.js"></script>
+</body>
+</html>

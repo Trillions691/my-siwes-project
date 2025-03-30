@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(34, 69, 58, 0.957);
+    width: 300px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group input {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#register-form {
+    display: none; /* Hide Register form initially */
+}
+
+/* Login Button */
+#login-btn {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Hover Effect */
+#login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Centering the Button */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.register-btn {
+    background: #28a745;
+    color: white;
+}
+
+.switch {
+    cursor: pointer;
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: underline;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Inventory - MediCare</title>
+    <link rel="stylesheet" href="med.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <ul class="menu">
+            <li><a href="dash.html">🏠 Dashboard</a></li>
+            <li><a href="invetory.html">🚑  Inventory</a></li>
+            <li><a href="cat.html">≣ Medicine Category</a></li>
+            <li><a href="med.html">📄 Medicne types</a></li>
+            <li><a href="profile.html">👤 Profile</a></li>
+            <li><a href="login.html">🚪 Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <button id="menu-btn">☰</button>
+    </div>
+
+</body>
+
+    <div class="container">
+        <header>
+            <h1>MediCare</h1>
+            <button class="menu-btn">☰</button>
+        </header>
+
+        <h2>Medicine Types</h2>
+
+        <div class="inventory-list">
+            <button class="btn btn-primary" onclick="showForm()">Add new category</button>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Category Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="medicineTable">
+                    <tr>
+                        <td>1</td>
+                        <td>Painkiller</td>
+                        <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Painkiller</td>
+                        <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Painkiller</td>
+                        <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Painkiller</td>
+                        <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Antibiotics</td>
+                        <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                        <tr>
+                            <td>6</td>
+                            <td>Anthistamines</td>
+                            <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                            <tr>
+                                <td>7</td>
+                                <td>Painkiller</td>
+                                <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Painkiller</td>
+                                    <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Painkiller</td>
+                                        <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Painkiller</td>
+                                            <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                                            <tr>
+                                                <td>11</td>
+                                                <td>Painkiller
+                                                <td><span class="edit">✔</span> <span class="delete">✖</span></td>
+                                        </tr>
+                                    </tr>
+                                </tr>
+                            </tr>
+                        </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="form-container" id="medicineForm">
+        <button class="btn btn-danger" onclick="hideForm()">Go Back</button>
+        <h3>New types details</h3>
+        <input type="text" id="name" placeholder="Enter Type Name">
+        <button class="btn btn-primary" onclick="addMedicine()">Add medicine Type</button>
+    </div>
+
+    <script src="med.js"></script>
+</body>
+</html>
